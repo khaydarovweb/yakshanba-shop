@@ -5,7 +5,7 @@ interface HomeProps {}
 const Home = (props: HomeProps) => {
 	return (
 		<section>
-			<Navbar /> Home Page
+			<h1>Home page</h1>
 		</section>
 	);
 };
