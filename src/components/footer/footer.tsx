@@ -17,10 +17,10 @@ const Footer = (props: FooterProps) => {
 				</p>
 			</span>
 			<span className="flex flex-col">
-				<strong className="pb-2">Shop</strong>
-				<a href="/man">Erkak</a>
-				<a href="/woman">Ayol</a>
-				<a href="/design">Shaxsiy dizayn</a>
+				<strong className="pb-2">Mahsulotlar</strong>
+				<a href="/futbolkalar">Unisex / Erkaklar Futbolkasi</a>
+				<a href="/hudi-sviterlar">Hudi / Sviterlar</a>
+				<a href="/kepkalar">Bosh kiyimlar</a>
 			</span>
 			<span className="flex flex-col">
 				<strong className="pb-2">Biz bilan bog'lanish</strong>

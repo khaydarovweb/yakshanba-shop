@@ -2,45 +2,46 @@ import React from 'react';
 import { Carousel } from 'antd';
 
 const contentStyle: React.CSSProperties = {
-	height: '550px',
+	height: '500px',
 	color: '#333',
 	// lineHeight: '160px',
 	// textAlign: 'center',
 	fontSize: 42,
 	fontWeight: 'semibold',
-	padding: 80,
-	background: '#c3e703',
+	padding: 50,
+	background: '#c7e702',
 	borderRadius: 20,
 	paddingBottom: 20,
 };
 
 const App: React.FC = () => (
-	<Carousel>
+	<Carousel autoplay autoplaySpeed={5000}>
 		<div>
 			<div style={contentStyle}>
-				<h1 className="pb-[40px]">
+				<h1 className="pb-[40px] font-medium">
 					Haftaning har YAKSHANBA <br /> kunlari 50% chegirma ! <br /> Ulgurib qoling.
 				</h1>
-
 				<a
 					href="/products"
-					className="bg-white px-8 py-3 transition text-[18px] font-medium rounded-xl hover:text-[#fff] hover:bg-transparent border-[3px] border-white"
+					className="bg-white px-8 py-3 transition text-[18px] font-medium rounded-xl hover:text-[#333] hover:bg-transparent border-[3px] border-[#333]"
 				>
 					Harid qilish
 				</a>
 			</div>
 		</div>
 		<div>
-			<h1 style={contentStyle}>
-				3 ta mahsulot <br /> harid qiling va +1 mahsulot <br />
-				sovg'a sifatida oling.
-			</h1>
-		</div>
-		<div>
-			<h1 style={contentStyle}>
-				1 + 1 = 3 <br /> Aksiyasidan foydalanib qoling, <br /> 2ta mahsulot harid qiling va 3
-				chisini <br /> sovg'a sifatida harid qiling.
-			</h1>
+			<div style={contentStyle}>
+				<h1 className="pb-[40px] font-medium">
+					1 + 1 = 3 <br /> Aksiyasidan foydalanib qoling, <br /> 2ta mahsulot harid qiling va 3
+					chisini <br /> sovg'a sifatida harid qiling.
+				</h1>
+				<a
+					href="/products"
+					className="bg-white px-8 py-3 transition text-[18px] font-medium rounded-xl hover:text-[#333] hover:bg-transparent border-[3px] border-[#333]"
+				>
+					Harid qilish
+				</a>
+			</div>
 		</div>
 	</Carousel>
 );
