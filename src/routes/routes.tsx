@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Navbar } from '../components/navbar';
 import { Footer } from '../components/footer';
 import { Home, Design, Cart, Order, Like, Products, Search } from '../pages';
+import { Boshkiyim, Futbolka, Hudi } from '../pages/products';
 
 function Router() {
 	return (
@@ -12,6 +13,9 @@ function Router() {
 				<Route path="/" element={<Home />} />
 				<Route path="/products" element={<Products />} />
 				<Route path="/search" element={<Search />} />
+				<Route path="/futbolka" element={<Futbolka />} />
+				<Route path="/hudi-sviter" element={<Hudi />} />
+				<Route path="/boshkiyim" element={<Boshkiyim />} />
 				<Route path="/design" element={<Design />} />
 				<Route path="/like" element={<Like />} />
 				<Route path="/cart" element={<Cart />} />

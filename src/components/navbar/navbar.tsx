@@ -12,27 +12,33 @@ const Navbar = (props: NavbarProps) => {
 	const navigate = useNavigate();
 
 	const onClick: MenuProps['onClick'] = ({ key }) => {
-		message.info(`Click on item ${key}`);
+		// message.info(`Click on item ${key}`);
+		navigate(`/${key}`);
 	};
 	const items: MenuProps['items'] = [
 		{
 			label: 'UniSex / Erkaklar Futbolkasi',
-			key: 'futbolkalar',
+			key: 'futbolka',
 		},
 		{
 			label: 'Hudi / Sviterlar',
-			key: 'hudi/sviterlar',
+			key: 'hudi-sviter',
 		},
 		{
 			label: 'Boshkiyimlar',
-			key: 'kepkalar',
+			key: 'boshkiyim',
 		},
 	];
 
 	return (
 		<div className="text-[#333333]">
 			<div className="w-full text-center p-2 text-[14px]">
-				<p>Bizning do'konimizga xush kelibsiz</p>
+				<p>
+					Bizning online do'konimizga xush kelibsiz{' '}
+					<a className="underline" href="">
+						Yakshanba Shop
+					</a>{' '}
+				</p>
 			</div>
 			<header className="w-full border flex justify-between py-7 px-16 text-[18px] items-center">
 				<span className="flex items-center gap-10">
